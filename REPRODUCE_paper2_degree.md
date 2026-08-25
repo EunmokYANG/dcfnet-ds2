@@ -181,7 +181,7 @@ in `outputs/tables/`.
 | Table VII — non-decomposable share | `degree_analysis --variant m4m` | `degree_contrib_{ds}_full_m4m.csv` |
 | Table VIII — largest coefficients | `p2_coeff_attribution_v1` | `p2_table6_coeff_attribution*.csv` |
 | Table IX — arity by degree | `p2_arity_v1` | `p2_table9_arity.csv` |
-| Figures 1, 2 — architecture, pipeline | drawn, not computed | `figures/Figure1_architecture.svg`, `figures/Figure2_pipeline.svg` |
+| Figures 1, 2 — architecture, pipeline | drawn, not computed | not in this repository; see the paper |
 | Figure 3 — degree sweep | `p2_figures_v2 --only 1` | `p2_fig1_k_sweep.pdf` |
 | Figure 4 — accuracy vs decomposability | `p2_figures_v2 --only 2` | `p2_fig2_tradeoff.pdf` |
 | Figure 5 — arity by degree | `p2_arity_v1` | `p2_fig5_arity.pdf` |
