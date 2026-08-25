@@ -1,7 +1,13 @@
 # ---------------------------------------------------------------- data
 # Both datasets are redistributed by their own authors. See README.
-data/
+# The two *_full_meta.json files are ours: feature and class names plus
+# summary statistics, no rows of either dataset. They are kept so that the
+# monomial names in Table VIII can be checked without rerunning anything.
+data/*
 !data/.gitkeep
+!data/processed/
+data/processed/*
+!data/processed/*_full_meta.json
  
 # ---------------------------------------------------------------- models
 # Trained checkpoints: several hundred .keras files, past GitHub's limits

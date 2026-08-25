@@ -39,7 +39,16 @@ the CSV in `data/source/`.
 
 Both are used at full scale with their natural class distribution: 1,176,851
 flows and 43 features on CICIoT2023, 2,242,931 flows and 47 features on
-NF-UNSW-NB15-v3, after the identifier columns are dropped.
+NF-UNSW-NB15-v3, after the identifier columns are dropped. The held-out
+partitions are 353,056 and 672,880 flows, the 1,025,936 on which the identity
+of Section III is checked.
+
+Two files under `data/processed/` are in the repository rather than downloaded:
+`ciciot2023_full_meta.json` and `nfunsw_full_meta.json`. Step 1 below rewrites
+them, but they are committed so that the feature names behind the monomials of
+Table VIII, the class order, the per-degree rms of the raw input and the class
+counts of each split can be read without running anything. They contain no rows
+of either dataset.
 
 ## Environment
 
