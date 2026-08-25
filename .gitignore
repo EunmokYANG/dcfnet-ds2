@@ -1,0 +1,50 @@
+# ---------------------------------------------------------------- data
+# Both datasets are redistributed by their own authors. See README.
+data/
+!data/.gitkeep
+ 
+# ---------------------------------------------------------------- models
+# Trained checkpoints: several hundred .keras files, past GitHub's limits
+# and not needed to reproduce any table or figure. Every analysis script
+# rebuilds what it needs from the result tables, and the checkpoints
+# themselves can be regenerated with the commands in the README.
+outputs/models/
+ 
+# ---------------------------------------------------------------- scratch
+outputs/**/*.backup.csv
+outputs/**/*.bak*.csv
+outputs/**/_archive_*/
+outputs/**/_tmp_*
+outputs/**/*.log
+outputs/**/*.source.json
+ 
+# ---------------------------------------------------------------- manuscript
+# Drafts carry an internal appendix that is not part of the release.
+*_draft*.docx
+*_draft*.md
+~$*.docx
+ 
+# ---------------------------------------------------------------- python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+build/
+dist/
+
+# ---------------------------------------------------------------- transfer
+# Temporary bundles used while moving files between machines.
+upload*.zip
+upload*/
+ 
+# ---------------------------------------------------------------- tooling
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+# extra local folders not part of the release
+data_*/
+backup_*/
+outputs/figures/
+outputs/dcfnet_ds_results.xlsx
+outputs/tables/*_backup.csv
