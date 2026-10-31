@@ -1,0 +1,189 @@
+{
+  "dataset": "nfunsw",
+  "split": "chronological train < val < test",
+  "rows_read": 2365424,
+  "rows_after_nan": 2242931,
+  "time_bounds_ms": {
+    "train": [
+      1421927376907,
+      1424225621073
+    ],
+    "val": [
+      1424225621106,
+      1424237460039
+    ],
+    "test": [
+      1424237460039,
+      1424262564927
+    ]
+  },
+  "test_seen_in_train": 329606,
+  "test_seen_in_train_pct": 48.98436571156818,
+  "removed_constant": [],
+  "removed_identifier": [
+    "FLOW_START_MILLISECONDS",
+    "FLOW_END_MILLISECONDS",
+    "Label",
+    "IPV4_SRC_ADDR",
+    "IPV4_DST_ADDR",
+    "L4_SRC_PORT",
+    "L4_DST_PORT"
+  ],
+  "seen_test_by_class": {
+    "Analysis": [
+      0,
+      580
+    ],
+    "Backdoor": [
+      0,
+      1009
+    ],
+    "Benign": [
+      329605,
+      627116
+    ],
+    "DoS": [
+      0,
+      2481
+    ],
+    "Exploits": [
+      0,
+      19794
+    ],
+    "Fuzzers": [
+      0,
+      12449
+    ],
+    "Generic": [
+      0,
+      2631
+    ],
+    "Reconnaissance": [
+      0,
+      6143
+    ],
+    "Shellcode": [
+      1,
+      610
+    ],
+    "Worms": [
+      0,
+      67
+    ]
+  },
+  "tag": "p2r_signedlog_minmax",
+  "protocol": "p2r_v2",
+  "scaler": "signedlog_minmax",
+  "categorical": "keep",
+  "n_features": 47,
+  "feature_names": [
+    "PROTOCOL",
+    "L7_PROTO",
+    "IN_BYTES",
+    "IN_PKTS",
+    "OUT_BYTES",
+    "OUT_PKTS",
+    "TCP_FLAGS",
+    "CLIENT_TCP_FLAGS",
+    "SERVER_TCP_FLAGS",
+    "FLOW_DURATION_MILLISECONDS",
+    "DURATION_IN",
+    "DURATION_OUT",
+    "MIN_TTL",
+    "MAX_TTL",
+    "LONGEST_FLOW_PKT",
+    "SHORTEST_FLOW_PKT",
+    "MIN_IP_PKT_LEN",
+    "MAX_IP_PKT_LEN",
+    "SRC_TO_DST_SECOND_BYTES",
+    "DST_TO_SRC_SECOND_BYTES",
+    "RETRANSMITTED_IN_BYTES",
+    "RETRANSMITTED_IN_PKTS",
+    "RETRANSMITTED_OUT_BYTES",
+    "RETRANSMITTED_OUT_PKTS",
+    "SRC_TO_DST_AVG_THROUGHPUT",
+    "DST_TO_SRC_AVG_THROUGHPUT",
+    "NUM_PKTS_UP_TO_128_BYTES",
+    "NUM_PKTS_128_TO_256_BYTES",
+    "NUM_PKTS_256_TO_512_BYTES",
+    "NUM_PKTS_512_TO_1024_BYTES",
+    "NUM_PKTS_1024_TO_1514_BYTES",
+    "TCP_WIN_MAX_IN",
+    "TCP_WIN_MAX_OUT",
+    "ICMP_TYPE",
+    "ICMP_IPV4_TYPE",
+    "DNS_QUERY_ID",
+    "DNS_QUERY_TYPE",
+    "DNS_TTL_ANSWER",
+    "FTP_COMMAND_RET_CODE",
+    "SRC_TO_DST_IAT_MIN",
+    "SRC_TO_DST_IAT_MAX",
+    "SRC_TO_DST_IAT_AVG",
+    "SRC_TO_DST_IAT_STDDEV",
+    "DST_TO_SRC_IAT_MIN",
+    "DST_TO_SRC_IAT_MAX",
+    "DST_TO_SRC_IAT_AVG",
+    "DST_TO_SRC_IAT_STDDEV"
+  ],
+  "n_classes": 10,
+  "label_mapping": {
+    "Analysis": 0,
+    "Backdoor": 1,
+    "Benign": 2,
+    "DoS": 3,
+    "Exploits": 4,
+    "Fuzzers": 5,
+    "Generic": 6,
+    "Reconnaissance": 7,
+    "Shellcode": 8,
+    "Worms": 9
+  },
+  "class_counts_train": {
+    "Analysis": 398,
+    "Backdoor": 2349,
+    "Benign": 1232378,
+    "DoS": 1108,
+    "Exploits": 8775,
+    "Fuzzers": 6799,
+    "Generic": 1037,
+    "Reconnaissance": 2575,
+    "Shellcode": 590,
+    "Worms": 31
+  },
+  "class_counts_val": {
+    "Analysis": 248,
+    "Backdoor": 93,
+    "Benign": 291533,
+    "DoS": 1461,
+    "Exploits": 10247,
+    "Fuzzers": 6340,
+    "Generic": 1092,
+    "Reconnaissance": 2573,
+    "Shellcode": 386,
+    "Worms": 38
+  },
+  "class_counts_test": {
+    "Analysis": 580,
+    "Backdoor": 1009,
+    "Benign": 627116,
+    "DoS": 2481,
+    "Exploits": 19794,
+    "Fuzzers": 12449,
+    "Generic": 2631,
+    "Reconnaissance": 6143,
+    "Shellcode": 610,
+    "Worms": 67
+  },
+  "train_shape": [
+    1256040,
+    47
+  ],
+  "val_shape": [
+    314011,
+    47
+  ],
+  "test_shape": [
+    672880,
+    47
+  ]
+}

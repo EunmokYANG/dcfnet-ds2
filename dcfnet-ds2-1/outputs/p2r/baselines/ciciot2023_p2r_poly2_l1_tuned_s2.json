@@ -1,0 +1,97 @@
+{
+  "pr_auc_macro": 0.4122080122825108,
+  "pr_auc_micro": 0.4024086893432948,
+  "f1_macro": 0.4030019749721764,
+  "per_class": {
+    "Benign": {
+      "n": 8271,
+      "recall": 0.8534639100471527,
+      "precision": 0.08685220729366602,
+      "pr_auc": 0.47862352642271894
+    },
+    "BruteForce": {
+      "n": 95,
+      "recall": 0.3263157894736842,
+      "precision": 0.0015709724826432879,
+      "pr_auc": 0.015292253795019355
+    },
+    "DDoS": {
+      "n": 220548,
+      "recall": 0.45127137856611715,
+      "precision": 0.8953409918946393,
+      "pr_auc": 0.8805903574278535
+    },
+    "DoS": {
+      "n": 58965,
+      "recall": 0.6906130755532943,
+      "precision": 0.5399936349652575,
+      "pr_auc": 0.44860964778019646
+    },
+    "Mirai": {
+      "n": 19303,
+      "recall": 0.8845775268093042,
+      "precision": 0.8729996421084922,
+      "pr_auc": 0.8572136261438602
+    },
+    "Recon": {
+      "n": 2627,
+      "recall": 0.38408831366577845,
+      "precision": 0.421294363256785,
+      "pr_auc": 0.21403223351677972
+    },
+    "Spoofing": {
+      "n": 3704,
+      "recall": 0.43169546436285094,
+      "precision": 0.6526530612244898,
+      "pr_auc": 0.3911189562602036
+    },
+    "Web": {
+      "n": 187,
+      "recall": 0.2887700534759358,
+      "precision": 0.03150525087514586,
+      "pr_auc": 0.012183496913454873
+    }
+  },
+  "n_terms": 845,
+  "n_interactions": 761,
+  "params_or_nodes": 7920,
+  "top10_share": 0.07139759368879438,
+  "top10_terms": [
+    "DNS*IAT",
+    "syn_count*Std",
+    "syn_count*Radius",
+    "syn_count*Covariance",
+    "syn_count*Variance",
+    "syn_count*HTTPS",
+    "ack_flag_number*syn_count",
+    "urg_count*DNS",
+    "HTTPS*Std",
+    "HTTPS*Covariance"
+  ],
+  "dataset": "ciciot2023",
+  "tag": "p2r",
+  "model": "poly2_l1_tuned",
+  "seed": 2,
+  "selected_alpha": 0.0001,
+  "selection": [
+    {
+      "alpha": 1e-06,
+      "val_pr_auc_macro": 0.45755715784001255,
+      "train_s": 394.5650333999656
+    },
+    {
+      "alpha": 1e-05,
+      "val_pr_auc_macro": 0.4345563371864463,
+      "train_s": 397.05728159996215
+    },
+    {
+      "alpha": 0.0001,
+      "val_pr_auc_macro": 0.4625143377441041,
+      "train_s": 410.3133323000511
+    }
+  ],
+  "epochs": 10,
+  "averaged": true,
+  "train_s": 409.4682257999666,
+  "inference_us_per_flow": 15.67091329313
+}

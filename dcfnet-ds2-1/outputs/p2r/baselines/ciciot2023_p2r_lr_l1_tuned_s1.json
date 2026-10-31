@@ -1,0 +1,109 @@
+{
+  "pr_auc_macro": 0.5512532486248466,
+  "pr_auc_micro": 0.7812602115726679,
+  "f1_macro": 0.4912847854905745,
+  "per_class": {
+    "Benign": {
+      "n": 8271,
+      "recall": 0.6782734856728327,
+      "precision": 0.754336425978217,
+      "pr_auc": 0.7289168508335349
+    },
+    "BruteForce": {
+      "n": 95,
+      "recall": 0.4105263157894737,
+      "precision": 0.033304867634500426,
+      "pr_auc": 0.18224194192186272
+    },
+    "DDoS": {
+      "n": 220548,
+      "recall": 0.5618459473674665,
+      "precision": 0.9458867354182728,
+      "pr_auc": 0.9441581426826426
+    },
+    "DoS": {
+      "n": 58965,
+      "recall": 0.8571525481217671,
+      "precision": 0.3628961615233281,
+      "pr_auc": 0.5080535974445101
+    },
+    "Mirai": {
+      "n": 19303,
+      "recall": 0.990105165000259,
+      "precision": 0.7326535306294564,
+      "pr_auc": 0.9886623159290888
+    },
+    "Recon": {
+      "n": 2627,
+      "recall": 0.4704986676817663,
+      "precision": 0.40498034076015726,
+      "pr_auc": 0.39299291517769425
+    },
+    "Spoofing": {
+      "n": 3704,
+      "recall": 0.5534557235421166,
+      "precision": 0.5652054039150813,
+      "pr_auc": 0.6067366909137991
+    },
+    "Web": {
+      "n": 187,
+      "recall": 0.6149732620320856,
+      "precision": 0.05609756097560976,
+      "pr_auc": 0.05826353409564013
+    }
+  },
+  "n_terms": 42,
+  "n_interactions": 0,
+  "params_or_nodes": 352,
+  "top10_share": 0.46150097049629757,
+  "top10_terms": [
+    "IAT",
+    "LLC",
+    "IPv",
+    "Variance",
+    "Number",
+    "Header_Length",
+    "rst_count",
+    "urg_count",
+    "syn_count",
+    "flow_duration"
+  ],
+  "dataset": "ciciot2023",
+  "tag": "p2r",
+  "model": "lr_l1_tuned",
+  "seed": 1,
+  "selected_C": 0.01,
+  "selection": [
+    {
+      "C": 0.001,
+      "val_pr_auc_macro": 0.5608207814170487,
+      "n_iter": 2000,
+      "converged": false,
+      "train_s": 3341.144365099957
+    },
+    {
+      "C": 0.01,
+      "val_pr_auc_macro": 0.5670045309888685,
+      "n_iter": 2000,
+      "converged": false,
+      "train_s": 3492.4267302999506
+    },
+    {
+      "C": 0.1,
+      "val_pr_auc_macro": 0.5669035121901579,
+      "n_iter": 2000,
+      "converged": false,
+      "train_s": 3590.5755718
+    },
+    {
+      "C": 1.0,
+      "val_pr_auc_macro": 0.5495212469421136,
+      "n_iter": 2000,
+      "converged": false,
+      "train_s": 3617.6735410999972
+    }
+  ],
+  "standardized": true,
+  "train_s": 3492.4267302999506,
+  "inference_us_per_flow": 0.16121453613608097
+}

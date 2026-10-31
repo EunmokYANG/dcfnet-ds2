@@ -1,0 +1,121 @@
+{
+  "pr_auc_macro": 0.36714354455966874,
+  "pr_auc_micro": 0.9917296298284852,
+  "f1_macro": 0.35383879866288265,
+  "per_class": {
+    "Analysis": {
+      "n": 580,
+      "recall": 0.9913793103448276,
+      "precision": 0.1586644591611479,
+      "pr_auc": 0.2200789002753651
+    },
+    "Backdoor": {
+      "n": 1009,
+      "recall": 0.07730426164519326,
+      "precision": 0.012436224489795918,
+      "pr_auc": 0.018873816018437732
+    },
+    "Benign": {
+      "n": 627116,
+      "recall": 0.9995806198534243,
+      "precision": 0.9999872380001308,
+      "pr_auc": 0.9999888030149513
+    },
+    "DoS": {
+      "n": 2481,
+      "recall": 0.1180975413139863,
+      "precision": 0.1322202166064982,
+      "pr_auc": 0.08352022470650781
+    },
+    "Exploits": {
+      "n": 19794,
+      "recall": 0.34889360412246134,
+      "precision": 0.9154294803817603,
+      "pr_auc": 0.7258339617974361
+    },
+    "Fuzzers": {
+      "n": 12449,
+      "recall": 0.528877821511768,
+      "precision": 0.5946531791907514,
+      "pr_auc": 0.5850315498512858
+    },
+    "Generic": {
+      "n": 2631,
+      "recall": 0.3774230330672748,
+      "precision": 0.2769874476987448,
+      "pr_auc": 0.2555332243490234
+    },
+    "Reconnaissance": {
+      "n": 6143,
+      "recall": 0.4533615497314016,
+      "precision": 0.4840111226972541,
+      "pr_auc": 0.45223472650251795
+    },
+    "Shellcode": {
+      "n": 610,
+      "recall": 0.7065573770491803,
+      "precision": 0.13347785692164757,
+      "pr_auc": 0.1401032083256376
+    },
+    "Worms": {
+      "n": 67,
+      "recall": 0.8656716417910447,
+      "precision": 0.02130003672420125,
+      "pr_auc": 0.1902370307555245
+    }
+  },
+  "n_terms": 47,
+  "n_interactions": 0,
+  "params_or_nodes": 480,
+  "top10_share": 0.43794609311607274,
+  "top10_terms": [
+    "MAX_TTL",
+    "MIN_TTL",
+    "RETRANSMITTED_OUT_PKTS",
+    "OUT_BYTES",
+    "RETRANSMITTED_IN_PKTS",
+    "DST_TO_SRC_SECOND_BYTES",
+    "RETRANSMITTED_OUT_BYTES",
+    "SRC_TO_DST_SECOND_BYTES",
+    "NUM_PKTS_256_TO_512_BYTES",
+    "NUM_PKTS_UP_TO_128_BYTES"
+  ],
+  "dataset": "nfunsw",
+  "tag": "p2r",
+  "model": "lr_l1_tuned",
+  "seed": 1,
+  "selected_C": 0.01,
+  "selection": [
+    {
+      "C": 0.001,
+      "val_pr_auc_macro": 0.3747275808081323,
+      "n_iter": 2000,
+      "converged": false,
+      "train_s": 9217.572608100018
+    },
+    {
+      "C": 0.01,
+      "val_pr_auc_macro": 0.38096446328303085,
+      "n_iter": 2000,
+      "converged": false,
+      "train_s": 10054.35672390007
+    },
+    {
+      "C": 0.1,
+      "val_pr_auc_macro": 0.37190391721296123,
+      "n_iter": 2000,
+      "converged": false,
+      "train_s": 10504.871835900005
+    },
+    {
+      "C": 1.0,
+      "val_pr_auc_macro": 0.3758282167246279,
+      "n_iter": 2000,
+      "converged": false,
+      "train_s": 10635.327762600034
+    }
+  ],
+  "standardized": true,
+  "train_s": 10054.35672390007,
+  "inference_us_per_flow": 0.18067753535855152
+}

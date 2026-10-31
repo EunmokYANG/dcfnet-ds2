@@ -1,0 +1,89 @@
+{
+  "pr_auc_macro": 0.2774696354213681,
+  "pr_auc_micro": 0.9923828773964092,
+  "f1_macro": 0.2981727612715702,
+  "per_class": {
+    "Analysis": {
+      "n": 580,
+      "recall": 0.8258620689655173,
+      "precision": 0.17088833392793434,
+      "pr_auc": 0.14139765262733225
+    },
+    "Backdoor": {
+      "n": 1009,
+      "recall": 0.0,
+      "precision": 0.0,
+      "pr_auc": 0.02302647350983248
+    },
+    "Benign": {
+      "n": 627116,
+      "recall": 0.999697025749622,
+      "precision": 0.999998404917957,
+      "pr_auc": 0.9999948199314818
+    },
+    "DoS": {
+      "n": 2481,
+      "recall": 0.0,
+      "precision": 0.0,
+      "pr_auc": 0.061032850725369986
+    },
+    "Exploits": {
+      "n": 19794,
+      "recall": 0.3911791451955138,
+      "precision": 0.9191595441595442,
+      "pr_auc": 0.6700671607171946
+    },
+    "Fuzzers": {
+      "n": 12449,
+      "recall": 0.8933247650413688,
+      "precision": 0.41967621419676215,
+      "pr_auc": 0.41038027606600747
+    },
+    "Generic": {
+      "n": 2631,
+      "recall": 0.19726339794754846,
+      "precision": 0.1996153846153846,
+      "pr_auc": 0.11518052486873252
+    },
+    "Reconnaissance": {
+      "n": 6143,
+      "recall": 0.0,
+      "precision": 0.0,
+      "pr_auc": 0.1870856794303733
+    },
+    "Shellcode": {
+      "n": 610,
+      "recall": 0.7836065573770492,
+      "precision": 0.09083998479665527,
+      "pr_auc": 0.07548823837763258
+    },
+    "Worms": {
+      "n": 67,
+      "recall": 0.7014925373134329,
+      "precision": 0.12876712328767123,
+      "pr_auc": 0.09104267795972443
+    }
+  },
+  "n_terms": 9,
+  "n_interactions": 8,
+  "params_or_nodes": 17,
+  "top10_share": 1.0,
+  "top10_terms": [
+    "MAX_TTL",
+    "ICMP_TYPE",
+    "CLIENT_TCP_FLAGS",
+    "L7_PROTO",
+    "NUM_PKTS_256_TO_512_BYTES",
+    "MAX_IP_PKT_LEN",
+    "PROTOCOL",
+    "NUM_PKTS_128_TO_256_BYTES",
+    "NUM_PKTS_512_TO_1024_BYTES",
+    "NUM_PKTS_1024_TO_1514_BYTES"
+  ],
+  "dataset": "nfunsw",
+  "tag": "p2r",
+  "model": "dt_d4",
+  "seed": 3,
+  "train_s": 3.748623299994506,
+  "inference_us_per_flow": 0.08797735109406626
+}

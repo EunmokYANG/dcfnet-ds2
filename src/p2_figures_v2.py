@@ -104,6 +104,8 @@ plt.rcParams.update({
     "legend.fontsize": 8, "xtick.labelsize": 8, "ytick.labelsize": 8,
     "figure.dpi": 300, "savefig.bbox": "tight", "axes.grid": True,
     "grid.alpha": 0.3, "grid.linewidth": 0.5,
+    # IEEE rejects Type 3 fonts; 42 emits Type 1/TrueType outlines instead.
+    "pdf.fonttype": 42, "ps.fonttype": 42,
 })
 DEG_COLORS = ["#4C72B0", "#8FA8D0", "#C5D0E6", "#F2C0A8", "#DD8452", "#C44E52"]
 

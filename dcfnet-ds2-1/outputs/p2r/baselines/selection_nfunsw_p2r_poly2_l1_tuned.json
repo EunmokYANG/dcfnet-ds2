@@ -1,0 +1,20 @@
+{
+  "selected_alpha": 1e-06,
+  "selection": [
+    {
+      "alpha": 1e-06,
+      "val_pr_auc_macro": 0.23331710280172172,
+      "train_s": 1252.0274767000228
+    },
+    {
+      "alpha": 1e-05,
+      "val_pr_auc_macro": 0.2155590092425606,
+      "train_s": 1285.7338975000894
+    },
+    {
+      "alpha": 0.0001,
+      "val_pr_auc_macro": 0.1970078047346045,
+      "train_s": 1312.035742899985
+    }
+  ]
+}

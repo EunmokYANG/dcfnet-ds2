@@ -1,0 +1,6 @@
+data/source/*.csv
+data/processed/*.npz
+outputs/p2r/models/
+logs/*.txt
+__pycache__/
+manuscript/

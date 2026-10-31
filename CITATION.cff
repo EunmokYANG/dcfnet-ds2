@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite the archived release."
 title: "DCFNet-DS: exact polynomial-degree decomposition for network intrusion detection"
-abstract: "Model, preprocessing, training and analysis code reproducing every table and figure of the paper."
+abstract: "Model, preprocessing, training and analysis code reproducing every table and figure of the paper. Version 2.0.0 adds the resubmission package in dcfnet-ds2-1/ (new partitions, ten-seed training, capacity controls, three-level exactness checks, margin attribution, frontier baselines)."
 authors:
   - family-names: "Yang"
     given-names: "Eunmok"
@@ -11,5 +11,5 @@ authors:
   - family-names: "Seo"
     given-names: "Changho"
     orcid: "https://orcid.org/0000-0002-0779-3539"
-version: "1.0.0"
+version: "2.0.0"
 license: MIT

@@ -1,0 +1,89 @@
+{
+  "pr_auc_macro": 0.23103309098922478,
+  "pr_auc_micro": 0.3564529506276212,
+  "f1_macro": 0.24626039985138964,
+  "per_class": {
+    "Analysis": {
+      "n": 580,
+      "recall": 0.9086206896551724,
+      "precision": 0.0021675914234124552,
+      "pr_auc": 0.1354110961949788
+    },
+    "Backdoor": {
+      "n": 1009,
+      "recall": 0.1288404360753221,
+      "precision": 0.010746466065966768,
+      "pr_auc": 0.0043339801201049
+    },
+    "Benign": {
+      "n": 627116,
+      "recall": 0.6130747740449932,
+      "precision": 0.9999947980471869,
+      "pr_auc": 0.999331983144683
+    },
+    "DoS": {
+      "n": 2481,
+      "recall": 0.15195485691253527,
+      "precision": 0.05470110272780035,
+      "pr_auc": 0.006791131683398998
+    },
+    "Exploits": {
+      "n": 19794,
+      "recall": 0.23204001212488634,
+      "precision": 0.799616991643454,
+      "pr_auc": 0.38462599378306384
+    },
+    "Fuzzers": {
+      "n": 12449,
+      "recall": 0.3929632902241144,
+      "precision": 0.5737743373211354,
+      "pr_auc": 0.3753778333255944
+    },
+    "Generic": {
+      "n": 2631,
+      "recall": 0.16875712656784492,
+      "precision": 0.14262769033087055,
+      "pr_auc": 0.025170586245344163
+    },
+    "Reconnaissance": {
+      "n": 6143,
+      "recall": 0.28617939117694935,
+      "precision": 0.7361809045226131,
+      "pr_auc": 0.2734660384917816
+    },
+    "Shellcode": {
+      "n": 610,
+      "recall": 0.5032786885245901,
+      "precision": 0.11940879035394789,
+      "pr_auc": 0.10348656543458953
+    },
+    "Worms": {
+      "n": 67,
+      "recall": 0.3582089552238806,
+      "precision": 0.006074411541381929,
+      "pr_auc": 0.0023357014687085988
+    }
+  },
+  "n_terms": 1166,
+  "n_interactions": 1072,
+  "params_or_nodes": 11760,
+  "top10_share": 0.1104169817410416,
+  "top10_terms": [
+    "TCP_FLAGS*DNS_QUERY_ID",
+    "CLIENT_TCP_FLAGS*DNS_QUERY_ID",
+    "DURATION_OUT*DNS_QUERY_ID",
+    "RETRANSMITTED_OUT_BYTES*DNS_QUERY_ID",
+    "SERVER_TCP_FLAGS*DNS_QUERY_ID",
+    "RETRANSMITTED_IN_PKTS*DNS_QUERY_ID",
+    "TCP_WIN_MAX_OUT*DNS_QUERY_ID",
+    "TCP_WIN_MAX_IN*DNS_QUERY_ID",
+    "ICMP_TYPE*DNS_QUERY_ID",
+    "RETRANSMITTED_IN_BYTES*DNS_QUERY_ID"
+  ],
+  "dataset": "nfunsw",
+  "tag": "p2r",
+  "model": "poly2_l1",
+  "seed": 2,
+  "train_s": 573.0325007999782,
+  "inference_us_per_flow": 19.627377689920582
+}

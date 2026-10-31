@@ -1,0 +1,89 @@
+{
+  "pr_auc_macro": 0.5043422663922519,
+  "pr_auc_micro": 0.9960738808949245,
+  "f1_macro": 0.5068712932488408,
+  "per_class": {
+    "Analysis": {
+      "n": 580,
+      "recall": 0.7586206896551724,
+      "precision": 0.2386117136659436,
+      "pr_auc": 0.23987105016422638
+    },
+    "Backdoor": {
+      "n": 1009,
+      "recall": 0.21407333994053518,
+      "precision": 0.03577343491222259,
+      "pr_auc": 0.02875286724291785
+    },
+    "Benign": {
+      "n": 627116,
+      "recall": 0.9998963509143444,
+      "precision": 0.9999968104769453,
+      "pr_auc": 0.9999989335206381
+    },
+    "DoS": {
+      "n": 2481,
+      "recall": 0.3490528012898025,
+      "precision": 0.2537357163785526,
+      "pr_auc": 0.21036976656160666
+    },
+    "Exploits": {
+      "n": 19794,
+      "recall": 0.5122764474083056,
+      "precision": 0.9179793590439979,
+      "pr_auc": 0.8438599033054748
+    },
+    "Fuzzers": {
+      "n": 12449,
+      "recall": 0.6754759418427183,
+      "precision": 0.6435787540180622,
+      "pr_auc": 0.6508808059863679
+    },
+    "Generic": {
+      "n": 2631,
+      "recall": 0.5222348916761688,
+      "precision": 0.4797486033519553,
+      "pr_auc": 0.4917214387895857
+    },
+    "Reconnaissance": {
+      "n": 6143,
+      "recall": 0.5160345108253297,
+      "precision": 0.6584960531782301,
+      "pr_auc": 0.6321564310541128
+    },
+    "Shellcode": {
+      "n": 610,
+      "recall": 0.7262295081967213,
+      "precision": 0.16748582230623818,
+      "pr_auc": 0.3497338044259694
+    },
+    "Worms": {
+      "n": 67,
+      "recall": 0.835820895522388,
+      "precision": 0.5773195876288659,
+      "pr_auc": 0.5960776628716191
+    }
+  },
+  "n_terms": 11780,
+  "n_interactions": null,
+  "params_or_nodes": 23180,
+  "top10_share": 0.6161663247165947,
+  "top10_terms": [
+    "MIN_TTL",
+    "SRC_TO_DST_SECOND_BYTES",
+    "DST_TO_SRC_AVG_THROUGHPUT",
+    "RETRANSMITTED_IN_BYTES",
+    "RETRANSMITTED_OUT_BYTES",
+    "L7_PROTO",
+    "MAX_TTL",
+    "SRC_TO_DST_IAT_AVG",
+    "SRC_TO_DST_IAT_MAX",
+    "DURATION_OUT"
+  ],
+  "dataset": "nfunsw",
+  "tag": "p2r",
+  "model": "hgb",
+  "seed": 3,
+  "train_s": 18.371994200046174,
+  "inference_us_per_flow": 4.542902449176972
+}

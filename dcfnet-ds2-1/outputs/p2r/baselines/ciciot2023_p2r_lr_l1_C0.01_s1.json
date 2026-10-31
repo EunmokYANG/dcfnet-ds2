@@ -1,0 +1,77 @@
+{
+  "pr_auc_macro": 0.5193016478556869,
+  "pr_auc_micro": 0.8006118237793394,
+  "f1_macro": 0.4751779607216061,
+  "per_class": {
+    "Benign": {
+      "n": 8271,
+      "recall": 0.44383992262120664,
+      "precision": 0.8137885169585458,
+      "pr_auc": 0.7657878281125345
+    },
+    "BruteForce": {
+      "n": 95,
+      "recall": 0.6631578947368421,
+      "precision": 0.02108433734939759,
+      "pr_auc": 0.023686163778920456
+    },
+    "DDoS": {
+      "n": 220548,
+      "recall": 0.6206268023287448,
+      "precision": 0.9565399693913919,
+      "pr_auc": 0.9556840106969435
+    },
+    "DoS": {
+      "n": 58965,
+      "recall": 0.8803357924192318,
+      "precision": 0.3918251811594203,
+      "pr_auc": 0.6477652674816508
+    },
+    "Mirai": {
+      "n": 19303,
+      "recall": 0.9904678029321867,
+      "precision": 0.8944979882099747,
+      "pr_auc": 0.9527342244462051
+    },
+    "Recon": {
+      "n": 2627,
+      "recall": 0.6322801674914351,
+      "precision": 0.32975977764542386,
+      "pr_auc": 0.334139622788281
+    },
+    "Spoofing": {
+      "n": 3704,
+      "recall": 0.5510259179265659,
+      "precision": 0.48792732488644514,
+      "pr_auc": 0.45477133396181263
+    },
+    "Web": {
+      "n": 187,
+      "recall": 0.0,
+      "precision": 0.0,
+      "pr_auc": 0.019844731579147214
+    }
+  },
+  "n_terms": 39,
+  "n_interactions": 0,
+  "params_or_nodes": 352,
+  "top10_share": 0.7704807246437906,
+  "top10_terms": [
+    "Covariance",
+    "Radius",
+    "Std",
+    "IAT",
+    "Tot sum",
+    "AVG",
+    "rst_count",
+    "Header_Length",
+    "Min",
+    "Protocol Type"
+  ],
+  "dataset": "ciciot2023",
+  "tag": "p2r",
+  "model": "lr_l1_C0.01",
+  "seed": 1,
+  "train_s": 553.8639465000015,
+  "inference_us_per_flow": 0.2345725211736728
+}

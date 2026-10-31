@@ -1,0 +1,109 @@
+{
+  "pr_auc_macro": 0.16069005464988567,
+  "pr_auc_micro": 0.2818087179858106,
+  "f1_macro": 0.09537367356787362,
+  "per_class": {
+    "Analysis": {
+      "n": 580,
+      "recall": 0.9948275862068966,
+      "precision": 0.0012962272373960434,
+      "pr_auc": 0.1482147489036856
+    },
+    "Backdoor": {
+      "n": 1009,
+      "recall": 0.017839444995044598,
+      "precision": 0.009906439185470555,
+      "pr_auc": 0.015304380215838593
+    },
+    "Benign": {
+      "n": 627116,
+      "recall": 0.3336097308950816,
+      "precision": 1.0,
+      "pr_auc": 0.9985081650967644
+    },
+    "DoS": {
+      "n": 2481,
+      "recall": 0.14913341394598953,
+      "precision": 0.036228336433956725,
+      "pr_auc": 0.01458554633756404
+    },
+    "Exploits": {
+      "n": 19794,
+      "recall": 0.041224613519248256,
+      "precision": 0.912751677852349,
+      "pr_auc": 0.2845360621387807
+    },
+    "Fuzzers": {
+      "n": 12449,
+      "recall": 0.009237689774279058,
+      "precision": 0.19896193771626297,
+      "pr_auc": 0.03319828724938234
+    },
+    "Generic": {
+      "n": 2631,
+      "recall": 0.18928164196123148,
+      "precision": 0.23227611940298507,
+      "pr_auc": 0.047187035801362666
+    },
+    "Reconnaissance": {
+      "n": 6143,
+      "recall": 0.006837050301155787,
+      "precision": 0.16535433070866143,
+      "pr_auc": 0.03935078475583106
+    },
+    "Shellcode": {
+      "n": 610,
+      "recall": 0.003278688524590164,
+      "precision": 0.002229654403567447,
+      "pr_auc": 0.0017932986855066833
+    },
+    "Worms": {
+      "n": 67,
+      "recall": 0.7910447761194029,
+      "precision": 0.030582804385458743,
+      "pr_auc": 0.02422223731414057
+    }
+  },
+  "n_terms": 1167,
+  "n_interactions": 1073,
+  "params_or_nodes": 11760,
+  "top10_share": 0.23301618493390455,
+  "top10_terms": [
+    "TCP_FLAGS*DNS_QUERY_ID",
+    "CLIENT_TCP_FLAGS*DNS_QUERY_ID",
+    "DURATION_OUT*DNS_QUERY_ID",
+    "RETRANSMITTED_OUT_BYTES*DNS_QUERY_ID",
+    "RETRANSMITTED_IN_PKTS*DNS_QUERY_ID",
+    "SERVER_TCP_FLAGS*DNS_QUERY_ID",
+    "TCP_WIN_MAX_OUT*DNS_QUERY_ID",
+    "TCP_WIN_MAX_IN*DNS_QUERY_ID",
+    "ICMP_TYPE*DNS_QUERY_ID",
+    "ICMP_IPV4_TYPE*DNS_QUERY_ID"
+  ],
+  "dataset": "nfunsw",
+  "tag": "p2r",
+  "model": "poly2_l1_tuned",
+  "seed": 2,
+  "selected_alpha": 1e-06,
+  "selection": [
+    {
+      "alpha": 1e-06,
+      "val_pr_auc_macro": 0.23331710280172172,
+      "train_s": 1252.0274767000228
+    },
+    {
+      "alpha": 1e-05,
+      "val_pr_auc_macro": 0.2155590092425606,
+      "train_s": 1285.7338975000894
+    },
+    {
+      "alpha": 0.0001,
+      "val_pr_auc_macro": 0.1970078047346045,
+      "train_s": 1312.035742899985
+    }
+  ],
+  "epochs": 10,
+  "averaged": true,
+  "train_s": 1302.0113530999515,
+  "inference_us_per_flow": 20.096394602340155
+}

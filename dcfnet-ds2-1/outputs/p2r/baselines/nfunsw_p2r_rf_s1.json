@@ -1,0 +1,89 @@
+{
+  "pr_auc_macro": 0.4854565579322102,
+  "pr_auc_micro": 0.9964968056679664,
+  "f1_macro": 0.5145038157190751,
+  "per_class": {
+    "Analysis": {
+      "n": 580,
+      "recall": 0.7948275862068965,
+      "precision": 0.23873640600725013,
+      "pr_auc": 0.24555154197938198
+    },
+    "Backdoor": {
+      "n": 1009,
+      "recall": 0.19226957383548068,
+      "precision": 0.03876123876123876,
+      "pr_auc": 0.030036206546469026
+    },
+    "Benign": {
+      "n": 627116,
+      "recall": 0.9999091077248866,
+      "precision": 0.9999984052562754,
+      "pr_auc": 0.9999996507866146
+    },
+    "DoS": {
+      "n": 2481,
+      "recall": 0.2954453849254333,
+      "precision": 0.3239063190455148,
+      "pr_auc": 0.21070474693562116
+    },
+    "Exploits": {
+      "n": 19794,
+      "recall": 0.5965949277558856,
+      "precision": 0.8859629379548353,
+      "pr_auc": 0.842431435208028
+    },
+    "Fuzzers": {
+      "n": 12449,
+      "recall": 0.7190135753875814,
+      "precision": 0.6517876647491444,
+      "pr_auc": 0.6552236595330676
+    },
+    "Generic": {
+      "n": 2631,
+      "recall": 0.5260357278601292,
+      "precision": 0.543171114599686,
+      "pr_auc": 0.4779820464674903
+    },
+    "Reconnaissance": {
+      "n": 6143,
+      "recall": 0.48673286667751914,
+      "precision": 0.6804733727810651,
+      "pr_auc": 0.6089745313606162
+    },
+    "Shellcode": {
+      "n": 610,
+      "recall": 0.6754098360655738,
+      "precision": 0.16460247702756692,
+      "pr_auc": 0.20226943040753403
+    },
+    "Worms": {
+      "n": 67,
+      "recall": 0.8656716417910447,
+      "precision": 0.5087719298245614,
+      "pr_auc": 0.5813923300972799
+    }
+  },
+  "n_terms": 188749,
+  "n_interactions": 188736,
+  "params_or_nodes": 377398,
+  "top10_share": 0.4501987518827053,
+  "top10_terms": [
+    "ICMP_IPV4_TYPE",
+    "IN_BYTES",
+    "ICMP_TYPE",
+    "MAX_IP_PKT_LEN",
+    "L7_PROTO",
+    "RETRANSMITTED_IN_BYTES",
+    "LONGEST_FLOW_PKT",
+    "MAX_TTL",
+    "RETRANSMITTED_OUT_BYTES",
+    "MIN_TTL"
+  ],
+  "dataset": "nfunsw",
+  "tag": "p2r",
+  "model": "rf",
+  "seed": 1,
+  "train_s": 14.089249400072731,
+  "inference_us_per_flow": 2.3563764711521165
+}
